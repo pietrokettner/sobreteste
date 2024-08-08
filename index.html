@@ -47,6 +47,10 @@
         .white {
             color: whitesmoke;
         }
+        .imagemSection {
+            height: 22rem;
+            border-radius: 20px;
+        }
         .bg-custom {
             background: lightsalmon;
             border-bottom-right-radius: 20px;
@@ -60,10 +64,38 @@
         .Imagem {
             height: 50%;
             width: 100%;
+            border-radius: 20px;
         }
         .socialMedia {
-            width: 15%;
+            width: 13%;
             height: auto;
+        }
+        .subDivLogo p {
+            margin-top: 0.5rem;
+        }
+        .subDivLogo a {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+        }
+        .subDivLogo a:hover,
+        .subDivLogo:hover {
+            color: whitesmoke;
+            background: blueviolet;
+            border-radius: 100px;
+        }
+
+        .subDivLogo img {
+            transition: filter 0.3s ease; /* Transição suave apenas para o filtro */
+        }
+
+        .subDivLogo a:hover img,
+        .subDivLogo:hover img {
+            filter: invert(60%) sepia(20%) saturate(4448%) hue-rotate(326deg) brightness(90%) contrast(101%);
         }
     </style>
 </head>
@@ -71,19 +103,19 @@
     <header class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="/1165310-3840x2160-desktop-4k-landscape-wallpaper.jpg" alt="">
+                <img src="/images/1165310-3840x2160-desktop-4k-landscape-wallpaper.jpg" alt="">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Sobre Nós</h1>
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="/windows-11-landscape-scenery-sunrise-stock-day-light-3840x2160-5661.jpg" alt="Imagem 2">
+                <img src="/images/windows-11-landscape-scenery-sunrise-stock-day-light-3840x2160-5661.jpg" alt="Imagem 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</h1>
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="/wp2005597.jpg" alt="Imagem 3">
+                <img src="/images/wp2005597.jpg" alt="Imagem 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</h1>
                 </div>
@@ -103,10 +135,12 @@
                 <div class="col-md-6">
                     <h2 class="white">Nossa Missão</h2>
                     <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                    <img class="imagemSection img-fluid" src="/images/120576784-successful-of-group-business-people-fist-bump-together-at-office-success-mission-team-meeting.jpg" alt="">
                 </div>
                 <div class="col-md-6">
                     <h2 class="white">Nossos Valores</h2>
                     <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                    <img class="imagemSection img-fluid" src="/images/core-values.png" alt="">
                 </div>
             </div>
         </section>
@@ -116,28 +150,28 @@
                 <div class="col-md-4">
                     <h2>Nossa Equipe</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
-                    <img class="Imagem img-fluid" src="/smiling-businessteam-holding-their-thumbs-up-ai-generative-photo.jpg" alt="">
+                    <img class="Imagem img-fluid" src="/images/smiling-businessteam-holding-their-thumbs-up-ai-generative-photo.jpg" alt="">
                 </div>
                 <div class="col-md-4">
                     <h2>Nossos Projetos</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
-                    <img class="Imagem img-fluid" src="/project-organization-diagram.png" alt="">
+                    <img class="Imagem img-fluid" src="/images/project-organization-diagram.png" alt="">
                 </div>
                 <div class="col-md-4">
                     <h2>Contato</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
                     <div class="divLogo">
                         <div class="subDivLogo">
-                            <img class="img-fluid socialMedia" src="/facebook-01.png" alt="">
+                           <a href="#"><img class="img-fluid socialMedia" src="/images/facebook-01.png" alt=""><p>Facebook</p></a>
                         </div>
                         <div class="subDivLogo">
-                            <img class="img-fluid socialMedia" src="/instagram-01.png" alt="">
+                           <a href="#"><img class="img-fluid socialMedia" src="/images/instagram-01.png" alt=""><p>Instagram</p></a>
                         </div>
                         <div class="subDivLogo">
-                            <img class="img-fluid socialMedia" src="/linkedin-01.png" alt="">
+                           <a href="#"><img class="img-fluid socialMedia" src="/images/linkedin-01.png" alt=""><p>Linkedin</p></a>
                         </div>
                         <div class="subDivLogo">
-                            <img class="img-fluid socialMedia" src="/whatsapp (1)-01.svg" alt="">
+                           <a href="#"><img class="img-fluid socialMedia" src="/images/whatsapp (1)-01.svg" alt=""><p>WhatsApp</p></a>
                         </div>
                     </div>
                 </div>
