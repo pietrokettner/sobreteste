@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+        .swiper {
+        width: 100%;
+        height: 600px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover; 
+        }
+        .swiper-slide {
+            cursor: grab;
+        }
+
+        .swiper-slide.grabbing {
+            cursor: grabbing;
+        }
+        .content-section {
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .content-section h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .content-section p {
+            font-size: 1.1rem;
+        }
+        .white {
+            color: whitesmoke;
+        }
+        .bg-custom {
+            background: lightsalmon;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="carouselExampleIndicators" class="swiper mySwiper" data-ride="carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/1165310-3840x2160-desktop-4k-landscape-wallpaper.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Sobre Nós</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/windows-11-landscape-scenery-sunrise-stock-day-light-3840x2160-5661.jpg" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/wp2005597.jpg" alt="Imagem 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </header>
+
+
+    <main class="container bg-custom">
+        <section class="content-section bg-dark">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="white">Nossa Missão</h2>
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="white">Nossos Valores</h2>
+                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-custom">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Nossa Equipe</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Nossos Projetos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Contato</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, felis at euismod aliquet, arcu purus facilisis nisi, at congue libero magna sed augue.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-2">
+        <p>&copy; 2024 Faculdade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            direction: 'horizontal', 
+            centeredSlides: false,
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            mousewheel: {
+                invert: true,
+            },
+            effect: 'creative',
+            creativeEffect: {
+                prev: {
+                    translate: [0, 0, -400],  
+                    opacity: 0.5,              
+                },
+                next: {
+                    translate: ['100%', 0, 0], 
+                    opacity: 0.8,              
+                },
+            },
+            parallax: true,
+            resizeObserver: true,
+            roundLengths: true,
+            watchSlidesProgress: true,
+            autoplay: {
+                delay: 3000,  
+            },
+            speed: 800, 
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                touchStart: function() {
+                    document.querySelectorAll('.swiper-slide').forEach(slide => {
+                        slide.classList.add('grabbing');
+                    });
+                },
+                touchEnd: function() {
+                    document.querySelectorAll('.swiper-slide').forEach(slide => {
+                        slide.classList.remove('grabbing');
+                    });
+                },
+                transitionEnd: function() {
+                    document.querySelectorAll('.swiper-slide').forEach(slide => {
+                        slide.classList.remove('grabbing');
+                    });
+                }
+            }
+        });
+
+        let isGrabbing = false;
+
+        var swiperSlides = document.querySelectorAll('.swiper-slide');
+
+        swiperSlides.forEach(slide => {
+            slide.addEventListener('mousedown', function() {
+                isGrabbing = true;
+                this.classList.add('grabbing');
+            });
+
+            slide.addEventListener('mouseup', function() {
+                if (isGrabbing) {
+                    isGrabbing = false;
+                    this.classList.remove('grabbing');
+                }
+            });
+
+            slide.addEventListener('mouseleave', function() {
+                if (isGrabbing) {
+                    this.classList.remove('grabbing');
+                }
+            });
+        });
+
+        document.addEventListener('mouseup', function() {
+            if (isGrabbing) {
+                isGrabbing = false;
+                document.querySelectorAll('.swiper-slide').forEach(slide => {
+                    slide.classList.remove('grabbing');
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
